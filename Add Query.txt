@@ -1,0 +1,56 @@
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`admin_id`, `username`, `name`, `password`) VALUES
+(16, 'kara', 'Kara Weir', 'kara1980'),
+(23, 'joss', 'Joss Ellison', 'josstheman'),
+(33, 'summer', 'Summer Reynolds', 'summerishere'),
+(14, 'courtnie', 'Courtnie Quinn', 'castlequinn');
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`stud_id`, `name`, `phone_number`, `address`, `password`) VALUES
+(31, 'Adele Perkins', '09125113555', 'Himamaylan City', 'adelehello'),
+(6, 'Adrian Mosby', '09123456789', 'Brgy. suay Himamaylan city', 'mosby834'),
+(7, 'Ricardo Dalisay', '09123456789', 'Manila Philippines', 'ricky45'),
+(8, 'Asa Nairn', '09175343549', 'Himamaylan City', '91do58bt8'),
+(9, 'Molly Finch', '09124449207', 'Port Orford', 'abu98r7ko'),
+(10, 'Alistair Healy', '09115438179', 'Independence', 'healing4u'),
+(11, 'Eric Holman', '09126707226', 'Deerfield Beach', 'hallman96'),
+(12, 'Garen Crownguard', '09172851356', 'Bainbridge', 'leagueoflegends'),
+(13, 'Luxanna Crownguard', '09172851356', 'Bainbridge', 'leagueoflegends');
+
+
+--
+-- Dumping data for table `course`
+--
+
+INSERT INTO `course` (`course_id`, `course_name`, `admin_id`, `day`, `time`, `building`, `room`, `semester`) VALUES
+(434, 'Accounting', 16, 'Mondays', '12:00', 'S.R Collins', '223', 'Fall'),
+(274, 'Marketting', 16, 'Wednesdays', '9:00', 'S.R Collins', '112', 'Spring'),
+(547, 'Mathematics', 14, 'Tuesdays', '10:00', 'M. T. Harrington Science', '314', 'Fall'),
+(242, 'English', 33, 'Fridays', '14:00', 'M. T. Harrington Science', '312', 'Fall'),
+(135, 'Physics', 14, 'Mondays', '15:00', 'M. T. Harrington Science', '231', 'Spring');
+
+
+
+--
+-- Dumping data for table `issue_course`
+--
+
+INSERT INTO `issue_course` (`course_id`, `stud_id`) VALUES
+(135, 6),
+(434, 31),
+(434, 6),
+(434, 8),
+(547, 8),
+(547, 9),
+(242, 2),
+(547, 13),
+(547, 31),
+(242, 11),
+(135, 13),
+(2, 12);
